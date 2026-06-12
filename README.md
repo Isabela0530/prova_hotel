@@ -24,3 +24,6 @@ Este repositório contém uma atividade prática de um sistema de gerenciamento 
 
 4.  **Rodar o Front-end:**
     *   Abra a pasta `./web` no **VS Code** e execute o ambiente para visualizar a interface do usuário.
+
+
+
