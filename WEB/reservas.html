@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Reservas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>Hotel Reservas</h2>
+    </aside>
+
+    <main>
+
+        <h1 id="tituloQuarto"></h1>
+
+        <button onclick="novaReserva()">
+            + Nova Reserva
+        </button>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Hóspede</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaReservas">
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <button onclick="voltar()">
+            Voltar
+        </button>
+
+    </main>
+
+</div>
+
+<div id="modal" class="modal">
+
+    <div class="modal-box">
+
+        <div class="icone">
+            !
+        </div>
+
+        <h2 id="tituloModal">
+            Excluir Reserva
+        </h2>
+
+        <p id="textoModal">
+            Deseja realmente excluir?
+        </p>
+
+        <div class="modal-botoes">
+
+            <button
+                class="btn-cancelar"
+                onclick="fecharModal()">
+                Cancelar
+            </button>
+
+            <button
+                class="btn-excluir"
+                onclick="confirmarExclusao()">
+                Excluir
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

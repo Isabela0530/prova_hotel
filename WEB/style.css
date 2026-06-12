@@ -1,0 +1,219 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+.container{
+display:flex;
+min-height:100vh;
+}
+
+.sidebar{
+
+width:220px;
+
+background:#0d5170;
+
+color:white;
+
+padding:20px;
+}
+
+.sidebar a{
+
+display:block;
+
+color:white;
+
+text-decoration:none;
+
+padding:12px;
+
+margin-top:10px;
+
+border-radius:8px;
+}
+
+.ativo{
+background:#3ba6d7;
+}
+
+main{
+
+flex:1;
+
+padding:40px;
+}
+
+.topo{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:30px;
+}
+
+button{
+
+padding:10px 15px;
+
+border:none;
+
+border-radius:6px;
+
+background:#3ba6d7;
+
+color:white;
+
+cursor:pointer;
+}
+
+.danger{
+
+background:#ff4d4d;
+}
+
+table{
+
+width:100%;
+
+background:white;
+
+border-collapse:collapse;
+
+margin-top:20px;
+}
+
+th,td{
+
+padding:15px;
+
+border:1px solid #ddd;
+}
+
+input,
+select{
+
+display:block;
+
+width:300px;
+
+padding:12px;
+
+margin:15px 0;
+}
+
+.modal{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.45);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+}
+
+.modal-box{
+
+    background:white;
+
+    width:420px;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+    animation:aparecer .2s ease;
+}
+
+.icone{
+
+    width:70px;
+    height:70px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#ffb648;
+
+    color:white;
+
+    font-size:40px;
+    font-weight:bold;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.modal-box h2{
+
+    margin-bottom:10px;
+}
+
+.modal-box p{
+
+    color:#666;
+
+    margin-bottom:25px;
+}
+
+.modal-botoes{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+}
+
+.btn-cancelar{
+
+    background:#f2f2f2;
+    color:#333;
+}
+
+.btn-excluir{
+
+    background:#ff4d4d;
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
